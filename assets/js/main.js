@@ -5,7 +5,7 @@
 * License: https://bootstrapmade.com/license/
 */
 
-alert("hi");
+
 
 (function() {
   "use strict";
