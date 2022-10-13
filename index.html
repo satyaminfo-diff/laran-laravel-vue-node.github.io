@@ -802,7 +802,7 @@
         $.ajax({
           url:"https://610a1ec152d56400176afc0b.mockapi.io/api/guest_count/1",
           type:"PUT",
-          data:{total_count:data.total_count+1},
+          data:{total_count:parseInt(data.total_count)+1},
           success:function(new_data)
           {
             console.log(new_data.total_count);
