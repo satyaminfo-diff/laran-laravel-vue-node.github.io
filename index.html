@@ -762,7 +762,7 @@
         <a href="https://www.google.com/search?q=satyaminfo" style="width: 90px;border-radius: 25px;font-weight: 900;" class="google" title="google profile" target="_blank">Google</a>
       </div>
       <div class="copyright">
-        &copy; Copyright <strong><span>My Resume</span></strong>. All Rights Reserved
+        Viewed Profile <strong><span id="total_views">0</span></strong>
       </div>
       <div class="credits">
         Designed by Satyam Vishwaakrma
@@ -788,12 +788,30 @@
   
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
- <!--  <script>
-    // http://192.168.1.157/CaMIAdmin/phpunit.php
-    $("#sendMessage").click(function(){
-        alert("Hi");
+  <script>
+   /*  $.getJSON("https://api.ipify.org?format=json", function(data) {
+         
+         console.log(data.ip);
+    }); */
+    $.ajax({
+      url:"https://610a1ec152d56400176afc0b.mockapi.io/api/guest_count/1",
+      type:"GET",
+      success:function(data)
+      {
+        $("#total_views").html(data.total_count);
+        $.ajax({
+          url:"https://610a1ec152d56400176afc0b.mockapi.io/api/guest_count/1",
+          type:"PUT",
+          data:{total_count:data.total_count+1},
+          success:function(new_data)
+          {
+            console.log(new_data.total_count);
+          }
+        });
+        
+      }
     });
-  </script> -->
+  </script>
 </body>
 
 </html>
