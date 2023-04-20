@@ -1309,6 +1309,7 @@ section {
 {
 .float-container .icon:last-child {
   display: block;
+  text-align: center;
 }
   .float-container
   {
