@@ -1308,14 +1308,14 @@ section {
 @media screen and (max-width:440px)
 {
 .float-container .icon:last-child {
-  display: none;
+  display: block;
 }
   .float-container
   {
       position: fixed;
       top: auto;
       bottom: 0;
-
+      left: 0px;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
