@@ -1265,7 +1265,7 @@ section {
   color: white;
   border-color: #46b8da;
   border-radius: 5px 0 0 5px;
-  background-color: #eb690b;
+  background-color: #0beb12;
   -webkit-box-shadow: 0 2px 4px #7d7d7d;
   box-shadow: 0 2px 4px #7d7d7d;
   -webkit-box-align: center;
@@ -1278,7 +1278,7 @@ section {
 }
 
 .float-container a:hover {
-  margin-right: 0;
+  margin-right: -85px;
   background-color: #c45100;
   -webkit-box-shadow: 0 2px 4px #7d7d7d;
   box-shadow: 0 2px 4px #7d7d7d;
