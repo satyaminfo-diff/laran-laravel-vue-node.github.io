@@ -1360,3 +1360,9 @@ section {
   color: #e2e2e2;
   text-transform: uppercase;
 }
+.kofi-button{
+  
+  background-color: #0563bb !important;
+  border-radius: 25px !important;
+  width: auto !important;
+}
